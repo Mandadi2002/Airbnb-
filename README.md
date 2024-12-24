@@ -1,4 +1,4 @@
-# Airbnb EDA Analysis in PowerBI
+## Airbnb EDA (Exploratory Data Analysis) project
 An Airbnb EDA (Exploratory Data Analysis) project typically involves analyzing a dataset containing information about Airbnb listings, such as the price, location, ratings, availability, amenities, and other factors. The goal is to explore the dataset, identify patterns, trends, and relationships between different features, and generate insights that can inform decisions.
 
 Here’s an outline of steps to guide you through an Airbnb EDA project:
@@ -59,7 +59,7 @@ Plotly: For interactive visualizations.
 Folium/Geopandas: For geospatial analysis.
 Scikit-learn: For machine learning models (if needed).
 
-# Airbnb analysis in Power BI
+## Airbnb analysis in Power BI
 Creating an Airbnb analysis in Power BI involves importing the Airbnb dataset, cleaning and transforming the data, and creating various visualizations to derive insights. Below is a step-by-step guide to help you build an Airbnb analysis dashboard in Power BI
 
 # Visualizations
