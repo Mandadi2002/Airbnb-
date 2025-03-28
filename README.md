@@ -1,4 +1,4 @@
-Airbnb Exploratory Data Analysis (EDA) Project Report
+# Airbnb Exploratory Data Analysis (EDA) Project Report
 
 # 1. Introduction
 
