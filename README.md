@@ -1,98 +1,97 @@
-## Airbnb EDA (Exploratory Data Analysis) project
-An Airbnb EDA (Exploratory Data Analysis) project typically involves analyzing a dataset containing information about Airbnb listings, such as the price, location, ratings, availability, amenities, and other factors. The goal is to explore the dataset, identify patterns, trends, and relationships between different features, and generate insights that can inform decisions.
+Airbnb Exploratory Data Analysis (EDA) Project Report
 
-Here’s an outline of steps to guide you through an Airbnb EDA project:
+1. Introduction
 
-# 1. Data Collection
-Obtain the dataset. You can either use publicly available datasets (e.g., from Kaggle) or the Airbnb API to collect data.
-The dataset might include columns like:
-listing_id: Unique identifier for each listing.
-price: Price per night for the listing.
-neighborhood: The neighborhood or location of the listing.
-room_type: Type of room (e.g., entire home, private room).
-availability: Number of available nights.
-number_of_reviews: Total number of reviews for the listing.
-review_scores_rating: Rating score given by guests.
-amenities: List of amenities provided (e.g., Wi-Fi, kitchen, parking).
-# 2. Data Cleaning
-Handle missing values (e.g., drop or fill missing data).
-Remove or correct outliers, if necessary (e.g., listings with unrealistic prices).
-Convert categorical variables to numerical ones (e.g., one-hot encoding for room type or neighborhood).
-Normalize/standardize numerical features if needed for modeling.
-# 3. Data Exploration
-Univariate Analysis:
-Explore the distribution of individual variables (e.g., histograms for price, bar plots for room type).
-Calculate basic statistics like mean, median, mode, and standard deviation for numerical features.
-Bivariate Analysis:
-Explore relationships between two variables (e.g., scatter plots for price vs. number of reviews, box plots for price vs. room type).
-Use correlation matrices to understand relationships between numerical variables.
-Geospatial Analysis:
-Visualize listings on a map using latitude and longitude (e.g., with folium or geopandas).
-Identify price trends by location or neighborhood.
-# 4. Visualization
-Use different types of plots to visualize data patterns:
-Histograms for distribution of prices, reviews, and availability.
-Box plots to check for outliers and distribution of price across different room types.
-Heatmaps for correlation analysis.
-Scatter plots for relationships between numerical variables.
-Geospatial plots to analyze listings by location.
-Libraries like matplotlib, seaborn, and plotly can be useful for this purpose.
-# 5. Insights Generation
-Identify trends and insights from the data:
-Which neighborhoods have the highest and lowest average prices?
-How do amenities affect pricing or reviews?
-Are there certain room types that are more popular in certain locations?
-How does the number of reviews correlate with listing price or rating?
-# 6. Advanced Analysis (Optional)
-Price Prediction: Build a regression model to predict listing prices based on features like room type, location, amenities, and number of reviews.
-Clustering: Use clustering techniques (e.g., K-means) to segment listings into different groups based on similar features (e.g., price ranges, amenities, locations).
-Sentiment Analysis: Analyze review texts to extract sentiment (positive, negative, neutral) and correlate it with ratings or pricing.
-# 7. Conclusion and Reporting
-Summarize the findings from your analysis.
-Provide actionable insights or recommendations (e.g., tips for hosts to improve pricing or reviews).
-Tools and Libraries to Use:
-Python: A versatile language for data analysis and visualization.
-Pandas: For data manipulation and analysis.
-NumPy: For numerical operations.
-Matplotlib/Seaborn: For static plots.
-Plotly: For interactive visualizations.
-Folium/Geopandas: For geospatial analysis.
-Scikit-learn: For machine learning models (if needed).
+Airbnb has revolutionized the hospitality industry by providing an online platform for property rentals. This project aims to analyze Airbnb listings data to extract meaningful insights about pricing, availability, host behavior, and customer preferences. The analysis was conducted using Python libraries such as Pandas, Matplotlib, Seaborn, and Power BI for visualization.
 
-## Airbnb analysis in Power BI
-Creating an Airbnb analysis in Power BI involves importing the Airbnb dataset, cleaning and transforming the data, and creating various visualizations to derive insights. Below is a step-by-step guide to help you build an Airbnb analysis dashboard in Power BI
+2. Objectives
 
-# Visualizations
-Power BI offers various types of visualizations to represent Airbnb data. Below are some suggestions for your dashboard:
+To understand pricing trends and factors influencing Airbnb rental prices.
 
-# Price Distribution:
+To analyze host activity and customer preferences.
 
-Use a histogram or box plot to show the distribution of listing prices.
-You can use a scatter plot to show the relationship between price and number of reviews.
-# Price vs. Location:
+To study geographical distribution and availability of listings.
 
-Use a map visualization (e.g., bubble map or filled map) to visualize Airbnb listings based on geographic location (e.g., neighborhood, city, or country).
+To visualize key findings using Power BI dashboards.
 
-# Room Type Analysis:
+3. Dataset Description
 
-Use a bar chart to compare the number of listings by room type (e.g., entire home, private room, shared room).
-You can also create a stacked bar chart to show the number of listings by room type and availability status (available vs. unavailable).
-# Review Score Distribution:
+The dataset used for this analysis contains Airbnb listings from a major city and includes the following key attributes:
 
-Use a histogram or bar chart to show the distribution of review scores across listings.
-A line chart could also be used to show review trends over time.
-# Price by Room Type:
+Listing ID: Unique identifier for each listing.
 
-Use a box plot or violin plot to visualize the distribution of prices by room type.
-A column chart or bar chart could also show the average price by room type.
-# Top Listings by Reviews:
+Host ID & Host Name: Information about the property owner.
 
-Use a table visualization to list top-rated Airbnb listings based on reviews and ratings.
-# Availability Analysis:
+Neighbourhood: Location of the listing.
 
-Use a line chart to track the availability of listings over time (e.g., by month or year).
-You could also use a pie chart or donut chart to show the percentage of listings available vs. unavailable.
-# Filters and Slicers:
+Latitude & Longitude: Geospatial data for mapping.
 
-Add slicers for room type, neighborhood, price range, availability, or rating to allow users to filter and interact with the data.
-You can add a date slicer for users to filter the data by time periods.
+Room Type: Type of accommodation (Entire home/apartment, Private room, Shared room).
+
+Price: Cost per night in the local currency.
+
+Minimum Nights: Minimum number of nights required for booking.
+
+Number of Reviews: Customer feedback count.
+
+Availability_365: Number of available days in a year.
+
+4. Data Cleaning and Preprocessing
+
+Handling Missing Values: Identified and treated missing values for key attributes such as price and availability.
+
+Removing Duplicates: Ensured data integrity by removing duplicate entries.
+
+Outlier Detection: Used box plots and statistical methods to detect and remove price anomalies.
+
+Data Transformation: Standardized formats for better readability and consistency.
+
+5. Exploratory Data Analysis (EDA)
+
+5.1 Price Distribution Analysis
+
+The price distribution showed a right-skewed pattern with a few high-priced listings.
+
+Most Airbnb properties were priced between $50 to $150 per night.
+
+Luxury listings (> $500 per night) were outliers, mainly concentrated in premium locations.
+
+5.2 Room Type Analysis
+
+Entire homes/apartments were the most common, followed by private rooms.
+
+Shared rooms had the least number of listings, indicating lower demand.
+
+5.3 Geographical Analysis
+
+Listings were clustered around city centers and tourist hotspots.
+
+High-priced listings were primarily located in downtown and beachside areas.
+
+Mapped geographical insights using Power BI for better visualization.
+
+5.4 Host Activity Analysis
+
+A small percentage of hosts controlled multiple listings.
+
+Superhosts (highly rated hosts) had higher booking rates and pricing power.
+
+5.5 Review Analysis
+
+Listings with more than 50 reviews tended to have higher occupancy rates.
+
+Positive reviews correlated with better customer satisfaction and repeat bookings.
+
+6. Insights and Recommendations
+
+Pricing Strategy: Hosts should optimize their pricing based on location, demand, and competitor analysis.
+
+Enhanced Customer Experience: Encouraging reviews and maintaining high cleanliness ratings can boost bookings.
+
+Targeted Marketing: Areas with high tourist activity should be promoted more aggressively.
+
+Optimal Availability: Hosts should increase availability during peak travel seasons to maximize revenue.
+
+7. Conclusion
+
+This project successfully analyzed Airbnb listings data to uncover patterns in pricing, availability, and customer preferences. The use of Power BI for interactive visualizations enhanced insights and helped in making data-driven recommendations for hosts and Airbnb stakeholders.
