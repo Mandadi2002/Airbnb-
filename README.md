@@ -6,7 +6,7 @@ Airbnb has revolutionized the hospitality industry by providing an online platfo
 
 # 2. Objectives
 
-** To understand pricing trends and factors influencing Airbnb rental prices.
+* To understand pricing trends and factors influencing Airbnb rental prices.
 
 ** To analyze host activity and customer preferences.
 
