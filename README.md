@@ -46,9 +46,9 @@ Handling Missing Values: Identified and treated missing values for key attribute
 
 * Data Transformation: Standardized formats for better readability and consistency.
 
-#5. Exploratory Data Analysis (EDA)
+# 5. Exploratory Data Analysis (EDA)
 
-#5.1 Price Distribution Analysis
+**5.1 Price Distribution Analysis**
 
 * The price distribution showed a right-skewed pattern with a few high-priced listings.
 
@@ -56,13 +56,13 @@ Handling Missing Values: Identified and treated missing values for key attribute
 
 * Luxury listings (> $500 per night) were outliers, mainly concentrated in premium locations.
 
-#5.2 Room Type Analysis
+**5.2 Room Type Analysis**
 
 * Entire homes/apartments were the most common, followed by private rooms.
 
 * Shared rooms had the least number of listings, indicating lower demand.
 
-#5.3 Geographical Analysis
+**5.3 Geographical Analysis**
 
 * Listings were clustered around city centers and tourist hotspots.
 
@@ -70,19 +70,19 @@ Handling Missing Values: Identified and treated missing values for key attribute
 
 * Mapped geographical insights using Power BI for better visualization.
 
-#5.4 Host Activity Analysis
+**5.4 Host Activity Analysis**
 
 * A small percentage of hosts controlled multiple listings.
 
 * Superhosts (highly rated hosts) had higher booking rates and pricing power.
 
-#5.5 Review Analysis
+**5.5 Review Analysis**
 
 * Listings with more than 50 reviews tended to have higher occupancy rates.
 
 * Positive reviews correlated with better customer satisfaction and repeat bookings.
 
-#6. Insights and Recommendations
+# 6. Insights and Recommendations
 
 * Pricing Strategy: Hosts should optimize their pricing based on location, demand, and competitor analysis.
 
@@ -92,6 +92,6 @@ Handling Missing Values: Identified and treated missing values for key attribute
 
 * Optimal Availability: Hosts should increase availability during peak travel seasons to maximize revenue.
 
-#7. Conclusion
+# 7. Conclusion
 
 This project successfully analyzed Airbnb listings data to uncover patterns in pricing, availability, and customer preferences. The use of Power BI for interactive visualizations enhanced insights and helped in making data-driven recommendations for hosts and Airbnb stakeholders.
