@@ -95,4 +95,5 @@ Handling Missing Values: Identified and treated missing values for key attribute
 # 7. Conclusion
 
 This project successfully analyzed Airbnb listings data to uncover patterns in pricing, availability, and customer preferences. The use of Power BI for interactive visualizations enhanced insights and helped in making data-driven recommendations for hosts and Airbnb stakeholders.
+
 PowerBI Dashboard: https://app.powerbi.com/view?r=eyJrIjoiYjYwOGQ2YTAtMjM4Ni00ZWQwLWJkMDAtOGJjZTMyNzRiZDk3IiwidCI6IjU2NjAxYzUzLTE4NTctNGI0Ni1hYzQzLTExOGI0N2VjMWExZiJ9
